@@ -18,13 +18,21 @@ class Auth extends AuthController {
             resizeMode="cover"
           />
           <View style={styles.inputContainer}>
-            <AppInput placeholder="Email" />
+            <AppInput
+              placeholder="Email"
+              keyboardType="email-address"
+              onChangeText={val => this.setState({email: val})}
+              containerStyle={styles.input}
+            />
             <AppInput
               placeholder="Password"
-              containerStyle={styles.inputStyle}
+              secureTextEntry
+              onChangeText={val => this.setState({password: val})}
+              containerStyle={[styles.inputStyle, styles.input]}
             />
             <AppButton
               title="Login/Register"
+              loading={this.state.isLogin}
               onPress={this.handleLogin}
               containerStyle={styles.buttonStyle}
             />
@@ -40,6 +48,9 @@ const styles = StyleSheet.create({
     width: '100%',
     height: responsiveWidth(100),
   },
+  input: {
+    borderRadius: responsiveWidth(4),
+  },
   inputContainer: {
     padding: responsiveWidth(5),
   },
@@ -48,6 +59,7 @@ const styles = StyleSheet.create({
   },
   buttonStyle: {
     marginTop: responsiveWidth(5),
+    borderRadius: responsiveWidth(4),
   },
 });
 

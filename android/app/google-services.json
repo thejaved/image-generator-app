@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "539144909370",
+    "project_id": "oldmax-180e2",
+    "storage_bucket": "oldmax-180e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539144909370:android:34081eafc368a30e193b03",
+        "android_client_info": {
+          "package_name": "com.Oldmax"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjlsMuSXQP9RPOgP1GiG1JN3_KUH_anaE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

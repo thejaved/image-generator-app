@@ -14,7 +14,6 @@ export default class SplashController extends Component<P, S> {
   }
 
   async componentDidMount() {
-    await AsyncStorage.removeItem('LOGINID');
     this.props.navigation?.addListener('focus', () => {
       this.handleNavigation();
     });
@@ -22,7 +21,7 @@ export default class SplashController extends Component<P, S> {
   }
 
   handleNavigation = async () => {
-    let isLogin = await AsyncStorage.getItem('LOGINID');
+    let isLogin = await AsyncStorage.getItem('AUTHUSERID');
     setTimeout(() => {
       if (isLogin) {
         this.props.navigation?.navigate('Bottom Stack');

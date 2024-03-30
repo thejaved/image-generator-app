@@ -63,9 +63,9 @@ const styles = StyleSheet.create({
   input: {
     width: '100%',
     height: '100%',
-    color: colors.black,
+    color: colors.white,
     borderRadius: responsiveWidth(2),
-    paddingHorizontal: responsiveWidth(2),
+    paddingHorizontal: responsiveWidth(4),
     fontFamily: fonts.regular,
   },
   iconStyle: {
