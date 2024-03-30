@@ -18,6 +18,7 @@ interface ScreenContainerProps extends StatusBarProps {
   backgroundColor?: string;
   barStyle?: null | StatusBarStyle | undefined;
   containerStyle?: StyleProp<ViewStyle> | undefined;
+  style?: StyleProp<ViewStyle> | undefined;
 }
 
 const ScreenContainer: React.FC<ScreenContainerProps> = ({
@@ -25,6 +26,7 @@ const ScreenContainer: React.FC<ScreenContainerProps> = ({
   barStyle,
   backgroundColor,
   containerStyle,
+  style,
   ...props
 }) => {
   return (
@@ -35,7 +37,7 @@ const ScreenContainer: React.FC<ScreenContainerProps> = ({
         {...props}
       />
       <SafeAreaView style={[styles.container, containerStyle]}>
-        <View style={styles.mainContainer}>{children}</View>
+        <View style={[styles.mainContainer, style]}>{children}</View>
       </SafeAreaView>
     </>
   );

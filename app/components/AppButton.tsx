@@ -50,7 +50,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     height: responsiveHeight(6),
     backgroundColor: colors.primary,
-    borderRadius: responsiveWidth(6),
   },
   labelTitleStyle: {
     fontFamily: fonts.regular,

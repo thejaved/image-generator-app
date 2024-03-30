@@ -43,7 +43,7 @@ const AppInput: React.FC<AppInputProps> = ({
       <TextInput
         style={styles.input}
         placeholder={placeholder}
-        placeholderTextColor={colors.black}
+        placeholderTextColor={colors.white}
         {...props}
       />
     </View>

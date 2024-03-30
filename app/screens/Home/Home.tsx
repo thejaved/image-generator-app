@@ -10,10 +10,10 @@ import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
 // file import's
 import {colors} from '../../config';
-import HomeController from './HomeController';
-import {icon1, icon2, icon3, icon4} from '../../assets/images';
-import {Categories, ScreenContainer} from '../../components';
 import fonts from '../../config/fonts';
+import HomeController from './HomeController';
+import {Categories, ScreenContainer} from '../../components';
+import {icon1, icon2, icon3, icon4} from '../../assets/images';
 
 class Home extends HomeController {
   render() {
@@ -77,21 +77,21 @@ const styles = StyleSheet.create({
   },
   textStyleLocation: {
     color: colors.white,
+    fontFamily: fonts.regular,
     marginLeft: responsiveWidth(1),
     fontSize: responsiveFontSize(2),
-    fontFamily: fonts.regular,
   },
   arrowDownStyle: {
     marginLeft: responsiveWidth(2),
   },
   openInput: {
     width: '100%',
-    height: responsiveHeight(6),
-    backgroundColor: colors.bgSecond,
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: responsiveWidth(2),
+    height: responsiveHeight(6),
+    backgroundColor: colors.bgSecond,
     borderRadius: responsiveWidth(2),
+    paddingHorizontal: responsiveWidth(2),
   },
   textStyle: {
     color: colors.white,
@@ -105,8 +105,8 @@ const styles = StyleSheet.create({
   },
   headText: {
     color: colors.white,
-    fontSize: responsiveFontSize(2),
     fontFamily: fonts.bold,
+    fontSize: responsiveFontSize(2),
   },
   textViewStyle: {
     color: colors.primary,
@@ -114,8 +114,8 @@ const styles = StyleSheet.create({
   },
   categorieStyle: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
     alignItems: 'center',
+    justifyContent: 'space-between',
   },
   sliderContainer: {
     paddingVertical: responsiveWidth(5),
@@ -129,9 +129,9 @@ const styles = StyleSheet.create({
   freshRecommeTextStyle: {
     color: colors.white,
     fontFamily: fonts.regular,
-    fontSize: responsiveFontSize(2.5),
     marginTop: responsiveWidth(10),
     marginBottom: responsiveWidth(2),
+    fontSize: responsiveFontSize(2.5),
   },
 });
 
